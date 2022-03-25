@@ -1,0 +1,79 @@
+<style>
+    body {
+    
+	background: url("img/fondolog.jpg");
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+</style><div class="container">
+    
+	<section id="content">
+        
+		<form method="post" action="index.php">
+			<h2>¡Registrese!</h2>
+			<div>
+				<input type="text" placeholder="Nombre usuario" name="user" required="" id="user" />
+			</div>
+            <div>
+				<input type="password" placeholder="Password" required="" name="password" id="exampleInputPassword1" />
+			</div>
+            <div>
+				<input type="email" placeholder="Correo electrónico" name="email" required="" id="email" />
+			</div>
+			
+			<div style="margin-left: 10% !important;">
+                <input type="hidden" name="registro" value="true" />
+				<input type="submit" name="btnRegistro" value="Registrarse" class="sinborde">
+                <a href="index.php" class="sm-text mx-auto mb-4">
+                    Volver
+                </a>
+			</div>
+		</form><!-- form -->
+	
+	</section><!-- content -->
+</div><!-- container -->
+
+<!-- <div id="padre">
+    <div style="background:rgb(231, 224, 181); margin-top:3%" class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>¿No tienes cuenta?</h1>
+            </div>
+        </div>
+        <div style="margin-top:10%" class="row">
+            <div class="col-12">
+                <form method="post" action="index.php">
+                    <div class="form-group">
+                    <label for="user">Nombre usuario</label>
+                    <input type="text" class="form-control" id="user" name="user" aria-describedby="userHelp" maxlength="50"
+                        required>
+                    <small id="userHelp" class="form-text text-muted">Escribe su usuario</small>
+            </div>
+                    <div class="form-group">
+                        <label for="email">Dirección de correo</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                            required>
+                        <small id="emailHelp" class="form-text text-muted">Escribe su correo</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <input type="hidden" name="registro" value="true" />
+                    <button type="submit" name="btnRegistro" value="yes" class="btn btn-primary">Registrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <form action="index.php">
+                    <button type="submit" class="btn">Volver</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+

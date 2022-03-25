@@ -1,0 +1,44 @@
+<style>
+    body {
+    
+	background: url("img/fondolog.jpg");
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+</style>
+
+<div class="container">
+    
+	<section id="content">
+        
+		<form method="post" action="index.php" onSubmit="return validarForm(this)">
+			<img src="img/logo.png" alt="logo" style="width: 170px; height:150px; margin-bottom: 2%;" />
+			<div>
+				<input type="text" placeholder="Usuario" name="user" required="" id="user" />
+			</div>
+			<div>
+				<input type="password" placeholder="Contraseña" name="password" required="" id="password" />
+			</div>
+			<div style="margin-left: 10% !important;">
+				<input type="submit" name="login" value="Iniciar Sesión" />
+				<input type="submit" name="btnRegistro" value="Registrarse" class="sinborde">
+			</div>
+		</form><!-- form -->
+	
+	</section><!-- content -->
+</div><!-- container -->
+<script type="text/javascript">
+	function validarForm(formulario) 
+	{
+		if(formulario.palabra.value.length==0) 
+		{ //¿Tiene 0 caracteres?
+			formulario.palabra.focus();  // Damos el foco al control
+			alert('Complete los datos que le faltan'); //Mostramos el mensaje
+			return false; 
+		} //devolvemos el foco  
+		return true; //Si ha llegado hasta aquí, es que todo es correcto 
+	}   
+</script>

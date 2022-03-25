@@ -1,0 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url(); */
+}
+#carro {
+    border-top:1px solid black;
+    border-bottom: 1px solid black;
+}

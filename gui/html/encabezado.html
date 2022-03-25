@@ -1,0 +1,50 @@
+<style>
+    @media only screen and (max-width: 700px) {
+        button{
+            font-size: 15px !important;
+        }
+}
+</style>
+
+
+<section>
+    <nav style="background: url('img/fondologin.jpg');"class="navbar navbar-expand-md bg-dark navbar-dark">
+        <img src="img/logo.png" alt="logo" id="logoyt" class="img-fluid" style="width: 160px; height:150px"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center col-md-8 col-lg-9" id="collapsibleNavbar">
+            <form action="index.php" method="post">
+            <ul id="menude"class="navbar-nav">
+                <li class="nav-item">
+                    <button name="func" value="0" class="btn" style="font-size:18px ; color: rgb(255, 255, 255)">Inicio</button>
+                </li>
+                <li class="nav-item">
+                    <button name="func" value="1" class="btn" style="font-size:18px; color: rgb(255, 255, 255)">Época</button>
+                </li>
+                <li class="nav-item">
+                    <button name="func" value="2" class="btn" style="font-size:18px ; color: rgb(255, 255, 255)">Catálogo</button>
+                </li>
+                <li class="nav-item">
+                    <button name="func" value="3" class="btn" style="font-size:18px; color: rgb(255, 255, 255)">Gestion usuario</button>
+                </li>
+                <li class="nav-item">
+                    <button name="func" value="7" class="btn" style="font-size:18px ; color: rgb(255, 255, 255)">Comentarios</button>
+                </li>
+                <li class="nav-item">
+                    <button name="logout" class="btn" style="font-size:18px; color: rgb(255, 255, 255)">Cerrar Sesion</button>
+                </li>
+            </ul>
+            </form>
+        </div>
+        <img src="img/logo.png" alt="logo" id="logofin" class="img-fluid" style="width: 160px; height:150px"/>
+    </nav>
+</section>
+ <style>
+   @media only screen and (max-width: 768px) { 
+        #logofin{
+            display: none;
+        }
+
+    }
+ </style>
